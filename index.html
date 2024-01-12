@@ -1,14 +1,89 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="style.css">
-    
-</head>
-<body>
-    my first website
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Forms</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div>
+      <p>This is <span style="color: red">important</span> information.</p>
+    </div>
+    <p>this is a paragraph</p>
+    <a target="_blank" href="https://www.google.cm">google</a>
+    <table class="classone" id="table1">
+      <caption>
+        Gagan
+      </caption>
+      <thead>
+        <tr>
+          <th>Name</th>
+          <th>Age</th>
+          <th>profession</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Gagan</td>
+          <td>22</td>
+          <td rowspan="2">engineer</td>
+        </tr>
+        <tr>
+          <td>Gopi</td>
+          <td>22</td>
+        </tr>
+      </tbody>
+    </table>
+    <tfoot>
+      foot
+    </tfoot>
+    <h1>form to apply for the course</h1>
+    <form action="post">
+      <div>
+        <label for="username">enter your username</label>
+        <input
+          type="text"
+          id="username"
+          name="username"
+          placeholder="enter your Name"
+        />
+      </div>
+      <div>
+        <label for="gender">gender : </label>
+        <label for="male">male</label>
+        <input type="radio" id="male" name="gender" value="male" />
+        <label for="female">female</label>
+        <input type="radio" id="female" name="gender" value="female" />
+      </div>
+      <div>
+        <label for="disability">disable? </label>
+        <input
+          type="checkbox"
+          id="disability"
+          name="disability"
+          value="female"
+        />
+      </div>
+      <div>
+        <label for="textarea">comments</label>
+        <textarea
+          id="textarea"
+          rows="4"
+          cols="15"
+          name="textbox"
+          placeholder="enter your text here"
+        ></textarea>
+      </div>
+      <div class="classone">
+        <label for="fruits">select the favourite fruits</label>
+        <select name="fruits" id="fruits">
+          <option value="apple">apple</option>
+          <option value="banana">banana</option>
+          <option value="cerry">cherry</option>
+        </select>
+      </div>
+    </form>
     <script src="script.js"></script>
-</body>
+  </body>
 </html>
