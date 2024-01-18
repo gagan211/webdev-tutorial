@@ -1,0 +1,14 @@
+/* this is a file that we will use to know more about css  */
+
+div{
+    color: red;
+}
+.firstclass{
+    background-color: yellow;
+}
+#firstid{
+    background-color: purple;
+}
+div>p{
+    font-style: italic;
+}
