@@ -1,14 +1,19 @@
-/* this is a file that we will use to know more about css  */
-
-div{
-    color: red;
+*{
+    padding: 0;
+    margin: 0;
 }
-.firstclass{
-    background-color: yellow;
+.box{
+    background-color: aqua;
 }
-#firstid{
-    background-color: purple;
+.box1{
+    text-align: center;
+    color: rebeccapurple;
+    padding: 10px;
+    margin: 25px;
+    border: 82px solid black;
+    height: 200px;
+    box-sizing: border-box;    
 }
-div>p{
-    font-style: italic;
+.box2{
+    color: rgb(241, 139, 15);
 }
