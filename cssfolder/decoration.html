@@ -1,34 +1,32 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width,initial-scale=1.0">
-  <title>list style</title>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
   <style>
-    ul li{
-      list-style:devanagari;
-      background-color: red;
-      list-style-position: inside;
-      border: 2px solid white;
+    img{
+      float: right;
     }
-    ul{
-      display: flex;
+    .cards{
+      border: 2px solid black;
+      display: flow-root;
     }
-    div{
-      height: 205px;
-      width: 205px;
-      overflow: auto;
-      white-space: nowrap;
-      text-overflow: ellipsis;
+    .card{
+      border: 2px solid red;
+    } 
+    .card:nth-child(3){
+      background-color: pink;
+      clear: both; 
     }
   </style>
-</head>
-<body>
-  <ul>
-    <li>Home</li>
-    <li>about</li>
-    <li>careers</li>
-  </ul>
-  <div>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Praesentium, similique. Aspernatur suscipit vel voluptatibus aperiam tempora fugit facilis eius sint neque est! Dolore sunt quasi perferendis dolorem praesentium voluptatem, debitis dolor velit recusandae et facere esse veritatis sapiente magnam illum fuga neque! Maiores, explicabo libero!Lorem Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro inventore placeat distinctio est dignissimos, maiores quas minus tenetur ab rem cupiditate assumenda facilis debitis dolor error libero sint nesciunt deleniti! Impedit corporis nulla non cum nisi soluta beatae a molestiae tempore molestias aliquid magni ab alias voluptas, esse aliquam ratione nostrum, debitis, officiis laborum ad pariatur.</div>
-</body>
+  <body>
+    <div class="cards">
+      <img src="https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885_1280.jpg" width="250px">
+      <div class="card">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eligendi, quo explicabo repellat voluptas est sit vitae, cum nostrum provident, aspernatur impedit. Nobis repellendus cupiditate odit eaque. Ex velit ut saepe eos beatae in nihil.</div>
+      <div class="card">card 2</div>
+      <div class="card">card 3</div>
+    </div>
+  </body>
 </html>
