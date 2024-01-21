@@ -1,14 +1,34 @@
-<!-- this is a html file that we will use to understand css properly -->
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>CSS</title>
-    <link rel="stylesheet" href="deco.css" />
-  </head>
-  <body>
-    <div class="box box1"> iam a box </div>
-    <div class="box box2"> iam another box </div>
-  </body>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <title>list style</title>
+  <style>
+    ul li{
+      list-style:devanagari;
+      background-color: red;
+      list-style-position: inside;
+      border: 2px solid white;
+    }
+    ul{
+      display: flex;
+    }
+    div{
+      height: 205px;
+      width: 205px;
+      overflow: auto;
+      white-space: nowrap;
+      text-overflow: ellipsis;
+    }
+  </style>
+</head>
+<body>
+  <ul>
+    <li>Home</li>
+    <li>about</li>
+    <li>careers</li>
+  </ul>
+  <div>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Praesentium, similique. Aspernatur suscipit vel voluptatibus aperiam tempora fugit facilis eius sint neque est! Dolore sunt quasi perferendis dolorem praesentium voluptatem, debitis dolor velit recusandae et facere esse veritatis sapiente magnam illum fuga neque! Maiores, explicabo libero!Lorem Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro inventore placeat distinctio est dignissimos, maiores quas minus tenetur ab rem cupiditate assumenda facilis debitis dolor error libero sint nesciunt deleniti! Impedit corporis nulla non cum nisi soluta beatae a molestiae tempore molestias aliquid magni ab alias voluptas, esse aliquam ratione nostrum, debitis, officiis laborum ad pariatur.</div>
+</body>
 </html>

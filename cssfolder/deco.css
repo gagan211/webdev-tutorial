@@ -2,18 +2,6 @@
     padding: 0;
     margin: 0;
 }
-.box{
-    background-color: aqua;
-}
-.box1{
-    text-align: center;
-    color: rebeccapurple;
-    padding: 10px;
-    margin: 25px;
-    border: 82px solid black;
-    height: 200px;
-    box-sizing: border-box;    
-}
-.box2{
-    color: rgb(241, 139, 15);
+div>p{
+    background-color: yellow;
 }
