@@ -4,29 +4,52 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+    <style>
+      /* .box:first-child{
+        background-color: red;
+      } */
+      .box::first-line {
+        color: pink;
+      }
+      /* [data-colour="primary"]{
+        background-color: aquamarine;
+        margin-top: 45px;
+      } */
+      /* .box:nth-child(even) {
+        background-color: blue;
+      } */
+      input::placeholder{
+        color: violet;
+        /* border: 13px solid black; */
+      }
+      .boxes::before{
+        content:"I am the before pseudo element";
+      }
+      .boxes::after{
+        content:"I am the atfer pseudo element";
+      }
+      .boxes::selection{
+        background-color: yellow;
+      }
+
+    </style>
   </head>
-  <style>
-    img{
-      float: right;
-    }
-    .cards{
-      border: 2px solid black;
-      display: flow-root;
-    }
-    .card{
-      border: 2px solid red;
-    } 
-    .card:nth-child(3){
-      background-color: pink;
-      clear: both; 
-    }
-  </style>
+
   <body>
-    <div class="cards">
-      <img src="https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885_1280.jpg" width="250px">
-      <div class="card">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eligendi, quo explicabo repellat voluptas est sit vitae, cum nostrum provident, aspernatur impedit. Nobis repellendus cupiditate odit eaque. Ex velit ut saepe eos beatae in nihil.</div>
-      <div class="card">card 2</div>
-      <div class="card">card 3</div>
+    <div class="boxes">
+      <div><span>hey wassup</span></div>
+    
+      <div data-colour="primary" class="box">
+        hey i am a box Lorem ipsum dolor sit amet consectetur adipisicing elit.
+        Labore corporis commodi accusamus non dolor enim laborum doloribus atque
+        tempore dolorum pariatur facilis magnam, fugit repellendus quo
+        excepturi? Itaque quam placeat at perferendis id exercitationem modi
+        libero autem et rem, necessitatibus ipsam in consectetur molestiae
+        incidunt.
+      </div>
+      <div class="box">hey i am a box</div>
+      <div class="box">hey i am a box</div>
+      <input type="text" placeholder="type your name here">
     </div>
   </body>
 </html>
