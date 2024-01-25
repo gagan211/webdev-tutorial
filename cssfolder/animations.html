@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Animatons</title>
+    <style>
+      .containe {
+        background-color: cornflowerblue;
+        height: 80vh;
+        width: 30vw;
+      }
+      .box {
+        width: 34px;
+        height: 45px;
+        background-color: aqua;
+        /* animation-name:gagananimation ;
+              animation-duration: 3s;
+              animation-iteration-count: infinite;
+              animation-timing-function: cubic-bezier();
+              animation-delay: 1s;
+              animation-direction:  */
+        /* all these can be put into a single line that is mentioned below */
+        animation: gagananimation 3s ease-in-out 1 backwards,
+        gagan2 3s ease-in-out 1 forwards;
+      }
+      @keyframes gagananimation {
+        from {
+          background-color: red;
+        }
+        to {
+          background-color: pink;
+        }
+      }
+      @keyframes gagan2 {
+        0%{
+          transform: rotate(100deg);
+        }
+        20%{
+          transform: rotate(150deg);
+        }
+
+        50% {
+          transform: rotate(200deg);
+        }
+        80% {
+          transform: rotate(2500deg);
+        }
+        100% {
+          transform: rotate(300deg);
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="box"></div>
+    </div>
+  </body>
+</html>
