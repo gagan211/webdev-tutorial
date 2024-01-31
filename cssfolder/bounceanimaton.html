@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>bounceanimation</title>
+    <style>
+      .container {
+        height: 665px;
+        width: 665px;
+        background-color: blue;
+        /* position: relative; */
+      }
+      .ball {
+        background-color: red;
+        height: 100px;
+        width: 100px;
+        border: 2px solid red;
+        border-radius: 55%;
+        position:absolute;
+        bottom:30%;
+        left: 0px;
+        animation: animatex 3s linear infinite,
+          animatey 1s ease-out infinite alternate;
+      }
+      @keyframes animatex {
+        from {
+          left: 0;
+        }
+        to {
+          left: 100%;
+        }
+      }
+      @keyframes animatey {
+        from {
+          bottom: 30%;
+        }
+        to {
+          bottom: 100%;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="ball"></div>
+    </div>
+  </body>
+</html>
