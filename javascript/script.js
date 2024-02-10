@@ -1,21 +1,12 @@
-// let boxes = document.getElementsByClassName("box")
-// console.log(boxes);
+let boxes=document.getElementsByClassName("box")
 
-// document.getElementById("red").style.backgroundColor="green"
+function randomgen() {
+    let a=Math.ceil(0+Math.random()*255)
+    let b=Math.ceil(0+Math.random()*255)
+    let c=Math.ceil(0+Math.random()*255)    
+    return `rgb(${a},${b},${c})`
+}
 
-// document.querySelectorAll(".box").style.backgroundColor="green"
-
-let selecto=document.querySelectorAll(".box");//this will return the elements in form of the nodelist and you cant access them directly hence we use for loops / for each loops
-
-
-document.querySelectorAll(".box").forEach(e=>{
-    console.log(e);
-    e.style.backgroundColor="green";
-})
-
-selecto.forEach(elem => {
-    elem.style.backgroundColor="pink";
+Array.from(boxes).forEach(e => {
+    e.style.backgroundColor=randomgen()
 });
-
-e=document.getElementsByTagName("div")
-e[2].style.backgroundColor="yellow";
