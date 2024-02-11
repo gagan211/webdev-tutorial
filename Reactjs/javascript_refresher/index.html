@@ -6,21 +6,20 @@
     <title>Document</title>
     <script>
       "use strict";
-      let a = 34;
-      console.log(a);
-      let obj = {
-        r: 34,
-        g: 344,
-      };
-      document.addEventListener("click", function click() {
-        console.log("clicked");
-        let conf = confirm("are you sure");
-        console.log(conf);
-        // alert("hello")
+      // document.addEventListener("click", function click() {
+      //   console.log("clicked");
+      //   let conf = confirm("are you sure");
+      //   console.log(conf);
+      //   // alert("hello")
+      // });
+      setTimeout(() => {
+        console.log("yeyyee");
+      }, 5000);
+      console.log("callback was done");
+      document.addEventListener("click", function clk() {
+        console.log("clickednow");
+        confirm("do you really want to do this?");
       });
-     setTimeout(() => { console.log("yeyyee"); }, 5000)
-     console.log("callback was done");
-
     </script>
   </head>
   <body>
