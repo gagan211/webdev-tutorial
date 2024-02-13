@@ -78,6 +78,9 @@ export default function Navbar(props) {
                 placeholder="Search"
                 aria-label="Search"
               />
+              <button className="btn btn-primary" type="button" onClick={props.togglemode}>red</button>
+              <button className="btn btn-primary" type="button">blue</button>
+              <button className="btn btn-primary" type="button">green</button>
               <button className="btn btn-outline-success" type="submit">
                 Search
               </button>
