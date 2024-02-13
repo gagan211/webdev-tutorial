@@ -10,3 +10,7 @@ function randomgen() {
 Array.from(boxes).forEach(e => {
     e.style.backgroundColor=randomgen()
 });
+
+hello= ()=>{
+    alert("you pressed a box damn" );
+}
