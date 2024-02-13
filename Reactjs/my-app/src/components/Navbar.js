@@ -2,6 +2,9 @@ import React from "react";
 import PropTypes from "prop-types";
 
 export default function Navbar(props) {
+  function colorchange(newColor) {
+    document.body.style.backgroundColor = newColor;
+  }
   return (
     <div>
       <nav
@@ -78,9 +81,9 @@ export default function Navbar(props) {
                 placeholder="Search"
                 aria-label="Search"
               />
-              <button className="btn btn-primary" type="button" onClick={props.togglemode}>red</button>
-              <button className="btn btn-primary" type="button">blue</button>
-              <button className="btn btn-primary" type="button">green</button>
+              <button className="btn btn-primary" type="button" onClick={()=>colorchange("red")}>red</button>
+              <button className="btn btn-secondary" type="button" onClick={()=>colorchange("blue")}>blue</button>
+              <button className="btn btn-primary" type="button" onClick={()=>colorchange("green")}>green</button>
               <button className="btn btn-outline-success" type="submit">
                 Search
               </button>
