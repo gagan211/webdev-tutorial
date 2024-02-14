@@ -1,16 +1,33 @@
-let boxes=document.getElementsByClassName("box")
 
-function randomgen() {
-    let a=Math.ceil(0+Math.random()*255)
-    let b=Math.ceil(0+Math.random()*255)
-    let c=Math.ceil(0+Math.random()*255)    
-    return `rgb(${a},${b},${c})`
+// async function getdata() {
+// return new   Promise((resolve, reject) => {
+//   setTimeout(() => {
+//     resolve(455)
+//     console.log("hey")
+//   }, 3000);
+// })
+
+
+
+async function getdata() {
+    let x = await fetch("http://jsonplaceholder.typicode.com/todos/1");
+    let data = await x.json();
+    console.log(data);
 }
 
-Array.from(boxes).forEach(e => {
-    e.style.backgroundColor=randomgen()
-});
+async function main() {
+    
 
-hello= ()=>{
-    alert("you pressed a box damn" );
+console.log("loading modules")
+let data= await getdata()
+console.log(data)
+console.log("do something else")
+console.log("load data")
+console.log("process data")
 }
+main()
+// data.then((v) => {
+//     console.log(data)
+//     console.log("process data")
+// }
+// )
