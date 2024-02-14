@@ -1,8 +1,10 @@
 import React, { useState } from "react";
 import "./App.css";
+import "./index.css";
 import Navbar from "./components/Navbar";
 import Textform from "./components/Textform";
 import Alert from "./components/Alert";
+import About from "./components/About";
 
 function App() {
   const [alert, newalert] = useState(null);
@@ -33,8 +35,8 @@ function App() {
     <React.Fragment>
       <Navbar title={"textutils"} mode={mode} togglemode={togglemode} />
       <Alert alert={alert} />
-      <div className="container my-3">
-        {/* <About/> */}
+      <div className="container my-3 bg-orange-500">
+        <About/>
         <Textform heading="enter your text" mode={mode}  showalert={showalert}/>
       </div>
     </React.Fragment>
