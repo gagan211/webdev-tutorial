@@ -3,5 +3,5 @@
     margin: 0;
 }
 div>p{
-    background-color: yellow;
+    background-color: "bg-yellow-500";
 }
