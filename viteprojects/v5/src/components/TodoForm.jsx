@@ -1,19 +1,19 @@
 /* eslint-disable no-unused-vars */
-import React,{ useState } from "react";
+import React, { useState } from "react";
 import { useTodo } from "../context/TodoContext";
 
 function TodoForm() {
   const [todo, setTodo] = useState("");
   const { addtodo } = useTodo();
 
+  //add is basic function that is used when we click the submit button after writing the particular todo in the main field
+  //at the end we make "setTodo("");" because we after adding the todo into the list we want that field to add more todos empty.
   const add = (e) => {
     e.preventDefault();
-
     if (!todo) return;
-
     addtodo({ todo, completed: false });
     setTodo("");
-  }
+  };
 
   return (
     <form onSubmit={add} className="flex">

@@ -27,18 +27,27 @@ function App() {
       )
     );
   };
+  // const toggleComplete = (id) => {
+  //   settodos((prevval)=>{
+  //     prevval.map((val)=>{val.id===id?{...val,completed:!val.completed}:val})
+  //   })
+  // };
+  // this fucntion is also but we dont use the same {} in the map funtions instead we use () as () has a automatic return associated with them 
+  // wihile using {} would req us to use aa reutrn statement with them in the part : { "RETURN" val.id===id?{...val,completed:!val.completed}:val})
 
+ 
   useEffect(() => {
-    const todos = JSON.parse(localStorage.getItem("todos"));
-
+    localStorage.setItem("todos", JSON.stringify(todos));//"todos" written here is just a string  that we have given to represent our data in the browser's storage, it has nothing to do with setItem. Syntax of SETITEM=(KEY,VALUE)
+  }, [todos]);
+  
+  
+  useEffect(() => {
+    const todos = JSON.parse(localStorage.getItem("todos"));//we mention "todos" as this is what is the key which w eare using to save our info in the browser's local storage 
+    //we can see it in the function above.
     if (todos && todos.length > 0) {
       settodos(todos);
     }
   }, []);
-
-  useEffect(() => {
-    localStorage.setItem("todos", JSON.stringify(todos));
-  }, [todos]);
 
   return (
     <TodoProvider
