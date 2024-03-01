@@ -1,8 +1,4 @@
-import React from "react";
 import {Link,NavLink} from 'react-router-dom'
-
-
-
 
 //we use LINK tag in place of A tag (from HTML) as A tag will refresh the  page and we don't want that. We want to navigate without refreshing hence we use LINK tag.
 export default function Header() {
